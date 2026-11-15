@@ -10,6 +10,7 @@ The software layer for Snitch clusters with a [Spatz](https://github.com/pulp-pl
 | `core/inc/spatz_pace.h` | `spatz_pace_on(blob)`, or `spatz_pace_enable()` and `spatz_pace_load(blob)`, and `spatz_pace_off()`, for PACE, the piecewise-polynomial unit behind `vfmul.vv` |
 | `core/inc/spatz_sync.h` | `spatz_flag_publish()` on the Spatz core; `spatz_flag_ready()`, `spatz_flag_wait()` and `spatz_flag_clear()` on the other cores |
 | `core/inc/spatz.h` | all of the above |
+| `core/inc/spatz_team.h` | `snrt_is_spatz_core()` and `snrt_cluster_spatz_core_num()`; the platform's `snrt.h` includes it after snitch-sdk's `team.h` |
 | `tests/isa/` | the Spatz ISA test suite |
 | `tests/headers/` | a compile check of the headers, with an example `snitch_cluster_cfg.h` |
 
